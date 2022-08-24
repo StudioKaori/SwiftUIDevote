@@ -13,6 +13,9 @@
 		43FE23EE28B663D200B0ABCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FE23ED28B663D200B0ABCB /* Preview Assets.xcassets */; };
 		43FE23F028B663D200B0ABCB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE23EF28B663D200B0ABCB /* Persistence.swift */; };
 		43FE23F328B663D200B0ABCB /* SwiftUIDevote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43FE23F128B663D200B0ABCB /* SwiftUIDevote.xcdatamodeld */; };
+		43FE23FC28B6653800B0ABCB /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FE23F928B6653800B0ABCB /* sound-tap.mp3 */; };
+		43FE23FD28B6653800B0ABCB /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FE23FA28B6653800B0ABCB /* sound-rise.mp3 */; };
+		43FE23FE28B6653800B0ABCB /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43FE23FB28B6653800B0ABCB /* sound-ding.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		43FE23ED28B663D200B0ABCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43FE23EF28B663D200B0ABCB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		43FE23F228B663D200B0ABCB /* SwiftUIDevote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIDevote.xcdatamodel; sourceTree = "<group>"; };
+		43FE23F928B6653800B0ABCB /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		43FE23FA28B6653800B0ABCB /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		43FE23FB28B6653800B0ABCB /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,9 @@
 		43FE23E528B663D100B0ABCB /* SwiftUIDevote */ = {
 			isa = PBXGroup;
 			children = (
+				43FE23FF28B6661300B0ABCB /* Sound */,
 				43FE23E628B663D100B0ABCB /* SwiftUIDevoteApp.swift */,
-				43FE23E828B663D100B0ABCB /* ContentView.swift */,
+				43FE240028B6662500B0ABCB /* View */,
 				43FE23EA28B663D200B0ABCB /* Assets.xcassets */,
 				43FE23EF28B663D200B0ABCB /* Persistence.swift */,
 				43FE23F128B663D200B0ABCB /* SwiftUIDevote.xcdatamodeld */,
@@ -71,6 +78,24 @@
 				43FE23ED28B663D200B0ABCB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43FE23FF28B6661300B0ABCB /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				43FE23FB28B6653800B0ABCB /* sound-ding.mp3 */,
+				43FE23FA28B6653800B0ABCB /* sound-rise.mp3 */,
+				43FE23F928B6653800B0ABCB /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		43FE240028B6662500B0ABCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43FE23E828B663D100B0ABCB /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FE23FE28B6653800B0ABCB /* sound-ding.mp3 in Resources */,
+				43FE23FC28B6653800B0ABCB /* sound-tap.mp3 in Resources */,
+				43FE23FD28B6653800B0ABCB /* sound-rise.mp3 in Resources */,
 				43FE23EE28B663D200B0ABCB /* Preview Assets.xcassets in Resources */,
 				43FE23EB28B663D200B0ABCB /* Assets.xcassets in Resources */,
 			);
