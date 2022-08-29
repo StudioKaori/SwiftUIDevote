@@ -93,6 +93,8 @@ struct ContentView: View {
                     .onDelete(perform: deleteItems)
                 } //: list
             } //: Vstack
+            .navigationTitle("Daily Tasks")
+            .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
