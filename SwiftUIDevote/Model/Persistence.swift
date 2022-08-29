@@ -12,6 +12,7 @@ struct PersistenceController {
     static let shared = PersistenceController()
 
     // MARK: - 2. Persistent container
+    // The class to handle core data function
     let container: NSPersistentContainer
 
     // MARK: - 3. Initialisation (Load the persistent store)
