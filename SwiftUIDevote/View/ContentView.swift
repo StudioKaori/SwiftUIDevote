@@ -13,6 +13,9 @@ struct ContentView: View {
     
     @State var task: String = ""
     
+    private var isNewTaskSaveButtonDisabled: Bool {
+        task.isEmpty
+    }
     
     // Fetching data
     @Environment(\.managedObjectContext) private var viewContext
@@ -74,11 +77,12 @@ struct ContentView: View {
                         Text("Save")
                         Spacer()
                     })
+                    .disabled(isNewTaskSaveButtonDisabled)
                     .padding()
                     .font(.headline)
                     .foregroundColor(.white
                     )
-                    .background(Color.pink)
+                    .background(isNewTaskSaveButtonDisabled ? Color.gray: Color.pink)
                     .cornerRadius(10)
                 } //: Vstack
                 .padding()
