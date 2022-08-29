@@ -55,13 +55,32 @@ struct ContentView: View {
     // MARK: - Body
     var body: some View {
         NavigationView {
+            
             VStack {
+                
+                // New Task text field
                 VStack(spacing: 16){
                     TextField("New Task", text: $task)
                         .padding()
                         .background(Color(UIColor.systemGray6))
+                    
+                    // Save button
+                    Button(action: {
+                        addItem()
+                    }, label: {
+                        Spacer()
+                        Text("Save")
+                        Spacer()
+                    })
+                    .padding()
+                    .font(.headline)
+                    .foregroundColor(.white
+                    )
+                    .background(Color.pink)
+                    .cornerRadius(10)
                 } //: Vstack
                 .padding()
+                
                 
                 List {
                     ForEach(items) { item in
