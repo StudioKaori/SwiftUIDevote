@@ -37,7 +37,7 @@ struct ContentView: View {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
-            }
+            } //: toolbar
             Text("Select an item")
         }
     }

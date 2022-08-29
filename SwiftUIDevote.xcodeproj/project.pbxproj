@@ -71,7 +71,6 @@
 				43FE240028B6662500B0ABCB /* View */,
 				43FE23EA28B663D200B0ABCB /* Assets.xcassets */,
 				43FE240428B7A46600B0ABCB /* Model */,
-				43FE23F128B663D200B0ABCB /* SwiftUIDevote.xcdatamodeld */,
 				43FE23EC28B663D200B0ABCB /* Preview Content */,
 			);
 			path = SwiftUIDevote;
@@ -128,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				43FE23EF28B663D200B0ABCB /* Persistence.swift */,
+				43FE23F128B663D200B0ABCB /* SwiftUIDevote.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
