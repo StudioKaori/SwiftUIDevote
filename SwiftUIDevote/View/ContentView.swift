@@ -11,6 +11,9 @@ import CoreData
 struct ContentView: View {
     // MARK: - Properties
     
+    @State var task: String = ""
+    
+    
     // Fetching data
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -53,6 +56,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                VStack(spacing: 16){
+                    TextField("New Task", text: $task)
+                        .padding()
+                        .background(Color(UIColor.systemGray6))
+                } //: Vstack
+                .padding()
+                
                 List {
                     ForEach(items) { item in
                         NavigationLink {
@@ -62,20 +72,20 @@ struct ContentView: View {
                         }
                     }
                     .onDelete(perform: deleteItems)
-                }
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        EditButton()
-                    }
-                    ToolbarItem {
-                        Button(action: addItem) {
-                            Label("Add Item", systemImage: "plus")
-                        }
-                    }
-                } //: toolbar
+                } //: list
             } //: Vstack
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    EditButton()
+                }
+                ToolbarItem {
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "plus")
+                    }
+                }
+            } //: toolbar
             Text("Select an item")
-        }
+        } //: NavigationView
     }
     
     
