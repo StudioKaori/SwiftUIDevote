@@ -66,8 +66,12 @@ struct NewTaskItemView: View {
             } //: Vstack
             .padding(.horizontal)
             .padding(.vertical, 20)
-            
+            .background(Color.white)
+            .cornerRadius(16)
+            .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.65), radius: 24)
+            .frame(maxWidth: 640)
         } //: Vstack
+        .padding()
     }
 }
 
