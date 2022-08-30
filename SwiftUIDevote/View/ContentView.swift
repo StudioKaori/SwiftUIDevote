@@ -57,8 +57,16 @@ struct ContentView: View {
                             .font(.system(size: 30, weight: .semibold, design: .rounded))
                         Text("New Task")
                             .font(.system(size: 24, weight: .bold, design: .rounded))
-                            .foregroundColor(.blue)
                     })
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 15)
+                    .background(
+                        LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint: .leading, endPoint: .trailing)
+                            .clipShape(Capsule())
+                    )
+                    
+                    .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 8, x: 0.0, y: 0.0)
                     // MARK: - Tasks
                     List {
                         ForEach(items) { item in
@@ -86,6 +94,9 @@ struct ContentView: View {
                 } //: Vstack
                 
                 // MARK: - New task Item
+                if showNewTaskItem {
+                    NewTaskItemView()
+                }
             }  //: Zstack
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear
