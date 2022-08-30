@@ -12,6 +12,7 @@ struct ContentView: View {
     // MARK: - Properties
     
     @State var task: String = ""
+    @State private var showNewTaskItem: Bool = false
     
     // Fetching data
     @Environment(\.managedObjectContext) private var viewContext
@@ -42,8 +43,23 @@ struct ContentView: View {
         NavigationView {
             
             ZStack {
+                // MARK: - Main View
+                
                 VStack {
+                    // MARK: - Header
+                    Spacer(minLength: 80)
                     
+                    // MARK: - New task button
+                    Button(action: {
+                        showNewTaskItem = true
+                    }, label: {
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 30, weight: .semibold, design: .rounded))
+                        Text("New Task")
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
+                            .foregroundColor(.blue)
+                    })
+                    // MARK: - Tasks
                     List {
                         ForEach(items) { item in
                             //                        NavigationLink {
@@ -68,6 +84,8 @@ struct ContentView: View {
                     .padding(.vertical, 0)
                     .frame(maxWidth: 640)
                 } //: Vstack
+                
+                // MARK: - New task Item
             }  //: Zstack
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear
