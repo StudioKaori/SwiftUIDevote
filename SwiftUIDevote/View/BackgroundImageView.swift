@@ -12,7 +12,7 @@ struct BackgroundImageView: View {
         Image("rocket")
             .antialiased(true)
             .resizable()
-            .scaledToFit()
+            .scaledToFill()
             .ignoresSafeArea(.all)
     }
 }
