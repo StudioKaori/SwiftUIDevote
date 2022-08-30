@@ -122,6 +122,8 @@ struct ContentView: View {
                 }
             } //: toolbar
         } //: NavigationView
+        // show only single column
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     
