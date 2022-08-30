@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43801CE628BCF6FC001C2048 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801CE528BCF6FC001C2048 /* Constant.swift */; };
 		43801CE828BD067A001C2048 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801CE728BD067A001C2048 /* HideKeyboardExtension.swift */; };
+		43801CEA28BE486F001C2048 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801CE928BE486F001C2048 /* BackgroundImageView.swift */; };
 		43FE23E728B663D100B0ABCB /* SwiftUIDevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE23E628B663D100B0ABCB /* SwiftUIDevoteApp.swift */; };
 		43FE23E928B663D100B0ABCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE23E828B663D100B0ABCB /* ContentView.swift */; };
 		43FE23EB28B663D200B0ABCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FE23EA28B663D200B0ABCB /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		43801CE528BCF6FC001C2048 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		43801CE728BD067A001C2048 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		43801CE928BE486F001C2048 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		43FE23E328B663D100B0ABCB /* SwiftUIDevote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDevote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FE23E628B663D100B0ABCB /* SwiftUIDevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDevoteApp.swift; sourceTree = "<group>"; };
 		43FE23E828B663D100B0ABCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				43FE23E828B663D100B0ABCB /* ContentView.swift */,
+				43801CE928BE486F001C2048 /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FE23F328B663D200B0ABCB /* SwiftUIDevote.xcdatamodeld in Sources */,
+				43801CEA28BE486F001C2048 /* BackgroundImageView.swift in Sources */,
 				43FE23F028B663D200B0ABCB /* Persistence.swift in Sources */,
 				43801CE828BD067A001C2048 /* HideKeyboardExtension.swift in Sources */,
 				43801CE628BCF6FC001C2048 /* Constant.swift in Sources */,
