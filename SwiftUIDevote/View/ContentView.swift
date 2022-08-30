@@ -13,10 +13,6 @@ struct ContentView: View {
     
     @State var task: String = ""
     
-    private var isNewTaskSaveButtonDisabled: Bool {
-        task.isEmpty
-    }
-    
     // Fetching data
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -27,26 +23,6 @@ struct ContentView: View {
     
     
     // MARK: - Function
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-            newItem.task = task
-            newItem.id = UUID()
-            
-            do {
-                try viewContext.save()
-            } catch {
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-            
-            // Empty the task text field
-            task = ""
-            hideKeyboard()
-        }
-    }
-    
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
@@ -67,31 +43,6 @@ struct ContentView: View {
             
             ZStack {
                 VStack {
-                    
-                    // New Task text field
-                    VStack(spacing: 16){
-                        TextField("New Task", text: $task)
-                            .padding()
-                            .background(Color(UIColor.systemGray6))
-                        
-                        // Save button
-                        Button(action: {
-                            addItem()
-                        }, label: {
-                            Spacer()
-                            Text("Save")
-                            Spacer()
-                        })
-                        .disabled(isNewTaskSaveButtonDisabled)
-                        .padding()
-                        .font(.headline)
-                        .foregroundColor(.white
-                        )
-                        .background(isNewTaskSaveButtonDisabled ? Color.gray: Color.pink)
-                        .cornerRadius(10)
-                    } //: Vstack
-                    .padding()
-                    
                     
                     List {
                         ForEach(items) { item in
