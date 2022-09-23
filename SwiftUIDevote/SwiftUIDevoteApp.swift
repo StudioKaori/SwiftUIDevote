@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct SwiftUIDevoteApp: App {
     let persistenceController = PersistenceController.shared
+    
+    @AppStorage("isDarkMode") var isDarkMode: Bool = false
 
     var body: some Scene {
         WindowGroup {
@@ -19,6 +21,7 @@ struct SwiftUIDevoteApp: App {
             // To place managedobjectcontext here, it'll be injected to the all views and subviews
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }
