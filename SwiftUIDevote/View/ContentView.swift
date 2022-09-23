@@ -107,13 +107,6 @@ struct ContentView: View {
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear
             }
-            .navigationTitle("Daily Tasks")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-            } //: toolbar
             .background(
                 BackgroundImageView()
             )
