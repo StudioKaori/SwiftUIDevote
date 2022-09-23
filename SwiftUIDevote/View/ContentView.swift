@@ -47,6 +47,28 @@ struct ContentView: View {
                 
                 VStack {
                     // MARK: - Header
+                    
+                    HStack (spacing: 10) {
+                        // Title
+                        Text("Devote")
+                            .font(.system(.largeTitle, design: .rounded))
+                            .fontWeight(.heavy)
+                            .padding(.leading, 4)
+                        
+                        Spacer()
+                        
+                        // Edit button
+                        EditButton()
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .padding(.horizontal, 10)
+                            .frame(minWidth: 70, minHeight: 24)
+                            .background(Capsule().stroke(Color.white, lineWidth: 2))
+                        
+                        // appearance button
+                    } //: Hstack
+                    .padding()
+                    .foregroundColor(.white)
+                    
                     Spacer(minLength: 80)
                     
                     // MARK: - New task button
@@ -107,6 +129,9 @@ struct ContentView: View {
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear
             }
+            .navigationTitle("Daily Tasks")
+            .navigationBarTitleDisplayMode(.large)
+            .navigationBarHidden(true)
             .background(
                 BackgroundImageView()
             )
