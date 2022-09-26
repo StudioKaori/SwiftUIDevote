@@ -12,6 +12,7 @@
 		43801CEA28BE486F001C2048 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801CE928BE486F001C2048 /* BackgroundImageView.swift */; };
 		43801CEC28BE499E001C2048 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801CEB28BE499E001C2048 /* NewTaskItemView.swift */; };
 		43801CEE28BE6098001C2048 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801CED28BE6098001C2048 /* BlankView.swift */; };
+		43DD2A4628E1D5C90055EF01 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DD2A4528E1D5C90055EF01 /* ListRowItemView.swift */; };
 		43FE23E728B663D100B0ABCB /* SwiftUIDevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE23E628B663D100B0ABCB /* SwiftUIDevoteApp.swift */; };
 		43FE23E928B663D100B0ABCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FE23E828B663D100B0ABCB /* ContentView.swift */; };
 		43FE23EB28B663D200B0ABCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FE23EA28B663D200B0ABCB /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		43801CE928BE486F001C2048 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		43801CEB28BE499E001C2048 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		43801CED28BE6098001C2048 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		43DD2A4528E1D5C90055EF01 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 		43FE23E328B663D100B0ABCB /* SwiftUIDevote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDevote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FE23E628B663D100B0ABCB /* SwiftUIDevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDevoteApp.swift; sourceTree = "<group>"; };
 		43FE23E828B663D100B0ABCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				43801CE928BE486F001C2048 /* BackgroundImageView.swift */,
 				43801CEB28BE499E001C2048 /* NewTaskItemView.swift */,
 				43801CED28BE6098001C2048 /* BlankView.swift */,
+				43DD2A4528E1D5C90055EF01 /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				43801CE828BD067A001C2048 /* HideKeyboardExtension.swift in Sources */,
 				43801CEE28BE6098001C2048 /* BlankView.swift in Sources */,
 				43801CE628BCF6FC001C2048 /* Constant.swift in Sources */,
+				43DD2A4628E1D5C90055EF01 /* ListRowItemView.swift in Sources */,
 				43FE23E928B663D100B0ABCB /* ContentView.swift in Sources */,
 				43FE23E728B663D100B0ABCB /* SwiftUIDevoteApp.swift in Sources */,
 				43801CEC28BE499E001C2048 /* NewTaskItemView.swift in Sources */,
